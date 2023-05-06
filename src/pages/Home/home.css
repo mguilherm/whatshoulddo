@@ -1,0 +1,46 @@
+.highlighted--color{
+    color: var(--purple);
+    font-weight: bolder;
+}
+
+.color--lighter{
+    color: var(--gray);
+}
+
+.home--container{
+    height: 100vh;
+}
+
+.home--container h1{
+    font-size: 3.5rem;
+}
+
+#brandmark{
+    font-size: 4.5rem;
+    transition: ease-in-out 0.5s;
+}
+
+.home--container span:hover{
+    color: var(--green);
+}
+
+.home--container p{
+    font-size: 1.5rem;
+    margin: 0 0 3rem 0;
+}
+
+@media (max-width: 650px){
+    .home--container h1{
+        font-size: 1.5rem;
+    }
+
+    #brandmark{
+        font-size: 2.5rem;
+    }
+
+    .home--container p{
+        font-size: 1rem;
+        margin: 0 1rem 1rem;
+        text-align: center;
+    }
+}

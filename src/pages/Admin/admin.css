@@ -1,0 +1,84 @@
+.admin--container{
+    margin-top: 4rem;
+}
+
+.admin--taskList-container{
+    width: 90%;
+    max-width: 767px;
+    margin-top: 3rem;
+}
+
+.admin--taskList{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    background-color: var(--dark);
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.admin--taskList-item{
+    display: flex;
+    align-items: center;
+
+}
+
+.admin--taskList-item input{
+    margin-right: 0.5rem;
+}
+
+.admin--btn{
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    font-weight: bolder;
+    color: var(--light);
+}
+
+.admin--btn + .admin--btn{
+    margin-left: 0.5rem;
+}
+
+.edit{
+    background: var(--purple);
+}
+
+.done{
+    color: var(--green);
+    background: transparent;
+}
+
+.admin--navBar{
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 3rem;
+    padding: 0 3rem;
+
+    background: var(--black);
+}
+
+.admin--navBar li{
+    color: var(--gray);
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.admin--navBar h1, 
+.admin--navBar #brandmark{
+    font-size: 1.5rem;
+}
+
+@media (max-width: 425px){
+    .admin--navBar h1, 
+    .admin--navBar #brandmark{
+        font-size: 1rem;
+    }   
+}
